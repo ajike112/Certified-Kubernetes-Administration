@@ -1,12 +1,5 @@
-# Day 11: Microservices & 3-Tier Architecture | Software Design for Kubernetes | CKA Course 2025
+# Day 11: Microservices & 3-Tier Architecture | Software Design for Kubernetes |
 
-## Video reference for Day 11 is the following:
-
-[![Watch the video](https://img.youtube.com/vi/waJ8brXMtYg/maxresdefault.jpg)](https://www.youtube.com/watch?v=waJ8brXMtYg&ab_channel=CloudWithVarJosh)
-
----
-## ⭐ Support the Project  
-If this **repository** helps you, give it a ⭐ to show your support and help others discover it! 
 
 ---
 
