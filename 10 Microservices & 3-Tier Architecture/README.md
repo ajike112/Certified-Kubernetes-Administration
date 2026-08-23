@@ -1,4 +1,4 @@
-# Day 11: Microservices & 3-Tier Architecture | Software Design for Kubernetes |
+# Microservices & 3-Tier Architecture | Software Design for Kubernetes |
 
 
 ---
