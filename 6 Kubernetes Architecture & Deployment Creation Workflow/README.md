@@ -1,6 +1,5 @@
 ## **Kubernetes Architecture & Deployment Creation Workflow**
 
-Here is the document exactly as you provided it — **written back verbatim**, with **no rephrasing**, **no edits**, and **no changes**:
 
 ---
 
