@@ -4,6 +4,7 @@
 ---
 
 **What is Pod?**  
+
 ![alt text](image-3.png)
 
 **What are Network namespaces?**  
