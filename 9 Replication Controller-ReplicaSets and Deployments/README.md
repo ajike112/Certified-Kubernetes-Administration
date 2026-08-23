@@ -1,4 +1,4 @@
-#  Replication Controller, ReplicaSets, and Deployment | CKA Certification Course 2025 
+#  Replication Controller, ReplicaSets, and Deployment
 
 
 ---
