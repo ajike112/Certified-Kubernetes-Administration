@@ -140,17 +140,5 @@ Your document states: *“The Kubelet interacts with the container runtime… an
 ReplicaSet ensures Pods remain at the desired count.  
 Kubelet monitors container health and updates status in etcd.
 
----
-
-## **Rephrased Summary**
-
-Here is a concise, polished summary of the entire document:
-
-Kubernetes organizes applications using Pods, each with its own isolated network namespace shared by its containers. Deployments manage ReplicaSets, which in turn maintain the correct number of Pods. The Kubernetes architecture consists of a control plane—responsible for orchestration—and worker nodes, which run application workloads.
-
-Networking between Pods involves CoreDNS for service name resolution, kube‑proxy for routing and load balancing, and CNI plugins for IP assignment and connectivity. When a Pod communicates with a Service, kube‑proxy selects a healthy backend Pod and forwards traffic, while responses return directly through established connections.
-
-The Deployment workflow begins when a user applies a YAML file. The API Server validates and stores the desired state in etcd. The Deployment Controller creates ReplicaSets, which create Pods. The Scheduler assigns Pods to nodes, and the Kubelet on each node pulls images, configures networking, and starts containers. ReplicaSets ensure Pods remain available, while the Kubelet continuously reports container health back to the API Server.
-
----
+----
 
