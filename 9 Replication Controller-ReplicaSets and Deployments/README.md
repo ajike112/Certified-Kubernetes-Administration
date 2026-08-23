@@ -1,4 +1,4 @@
-#  Replication Controller, ReplicaSets, and Deployment
+#  Replication Controller, ReplicaSets, and Deployment.
 
 
 ---
