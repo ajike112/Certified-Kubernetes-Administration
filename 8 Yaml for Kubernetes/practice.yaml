@@ -1,0 +1,32 @@
+first_name: Adekunle #String scalar
+height: 6.0 #Float scalar
+roll_number: 9 #Integer scalar
+is_engineer: true #Boolean scalar
+payment_dues: null # scalar
+address: #Dictionary
+  apartment_number: xxx-001
+  street: wall_street
+  state: New_York
+  country: that_USA
+  contact: #Nested dictionary
+    phone: 1234567890
+    email: adekunle@example.com
+hobbies: #List
+  - music
+  - sports: #Nested list
+      - soccer
+      - basketball
+  - reading
+education:   # Dictionary with nested list
+  degrees:
+    - degree: Bachelors
+      field: Chemical Engineering
+    - degree: Masters
+      field: General Engineering  
+work_experience:
+  - company: ABC Corp
+    role: DevOps Engineer
+    duration: 4 years
+  - company: XYZ Corp 
+    role: DevOps Architect
+   duration: 2 years and present 
