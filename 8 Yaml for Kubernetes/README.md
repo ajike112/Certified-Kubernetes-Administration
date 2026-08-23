@@ -1,11 +1,5 @@
-# Day 9: YAML Tutorial for Kubernetes | Imperative vs Declarative | CKA Certification Course 2025
+## YAML Tutorial for Kubernetes | Imperative vs Declarative | ##
 
-## Video reference for Day 9 is the following:
-
-
----
-## ⭐ Support the Project  
-If this **repository** helps you, give it a ⭐ to show your support and help others discover it! 
 
 ---
 ## Imperative vs. Declarative
