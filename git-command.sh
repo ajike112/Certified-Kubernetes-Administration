@@ -4,7 +4,7 @@ echo "Add files and do local commit"
 git add .
 echo "checking status"
 git status
-git commit -am "Pushing a Dockerfile deep dive folder containing a simple python application and its Dockerfile instructions"
+git commit -am "Pushing Kubernetes introduction and hands-ons thereafter"
 
 echo "Pushing to Github Repository"
 git push -u origin master
