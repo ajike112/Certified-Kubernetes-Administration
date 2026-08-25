@@ -1,34 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-deploy
+  name: frontend-deploy
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: backend
+      app: frontend
   template:
     metadata:
       labels:
-        app: backend
+        app: frontend
     spec:
       containers:
-        - name: backend-container
-          image: hashicorp/http-echo
-          args:
-            - "-text=Hello from Backend"
+        - name: frontend-container
+          image: nginx
 
 ---
 
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend-svc
+  name: frontend-svc
 spec:
-  type: ClusterIP
+  type: NodePort
+  selector:
+    app: frontend
   ports:
     - protocol: TCP
-      port: 9090
-      targetPort: 5678
-  selector:
-    app: backend
+      port: 80         # ClusterIP service port
+      targetPort: 80   # The container’s port
+      nodePort: 31000  # NodePort (must be within 30000-32767)

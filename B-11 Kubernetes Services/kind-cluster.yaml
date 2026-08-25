@@ -1,33 +1,19 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: backend-deploy
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: backend
-  template:
-    metadata:
-      labels:
-        app: backend
-    spec:
-      containers:
-        - name: backend-container
-          image: hashicorp/http-echo
-          args:
-            - "-text=Hello from Backend"
----
+# kind-cluster-config.yaml
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
 
-apiVersion: v1
-kind: Service
-metadata:
-  name: backend-svc
-spec:
-  type: ClusterIP
-  ports:
-    - protocol: TCP
-      port: 9090
-      targetPort: 5678
-  selector:
-    app: backend
+# Specify the Kubernetes version by using a specific node image
+# Visit https://hub.docker.com/r/kindest/node/tags and https://github.com/kubernetes-sigs/kind/releases for available images
+
+nodes:
+  - role: control-plane
+    image: kindest/node:v1.31.4@sha256:2cb39f7295fe7eafee0842b1052a599a4fb0f8bcf3f83d96c7f4864c357c6c30 # Replace with the Kubernetes version you want
+    extraPortMappings:
+      - containerPort: 31000 # Port inside the KIND container
+        hostPort: 31000 # Port on your local machine (host system). 
+        # If this were set to 9090, you would access the service at localhost:9090, 
+        # and traffic would be forwarded to containerPort 31000 inside the KIND cluster.
+  - role: worker
+    image: kindest/node:v1.31.4@sha256:2cb39f7295fe7eafee0842b1052a599a4fb0f8bcf3f83d96c7f4864c357c6c30
+  - role: worker
+    image: kindest/node:v1.31.4@sha256:2cb39f7295fe7eafee0842b1052a599a4fb0f8bcf3f83d96c7f4864c357c6c30
