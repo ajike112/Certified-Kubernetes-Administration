@@ -26,7 +26,6 @@
 
 ## **Understanding the Kubernetes Scheduler**  
 
-![Alt text](/images/15a.png)
 
 The **Kubernetes Scheduler** is responsible for **automatically placing pods** on available worker nodes based on factors like:  
 - **Resource availability** (CPU, memory).  
