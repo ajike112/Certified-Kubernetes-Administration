@@ -29,8 +29,8 @@
 
 The **Kubernetes Scheduler** is responsible for **automatically placing pods** on available worker nodes based on factors like:  
 - **Resource availability** (CPU, memory).  
-- **Taints and tolerations** (node restrictions, discussed in Day 16).  
-- **Affinity and anti-affinity rules** (Discussed in Day 17).  
+- **Taints and tolerations** 
+- **Affinity and anti-affinity rules** 
 
 However, **can we bypass the scheduler and manually assign pods to nodes?**  
 Yes! This is where **manual scheduling** comes in.
